@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Container with Pseudo-Elements</title>
+    <style>
+        #container {
+            margin: 20px;
+        }
+        #container::before {
+            content: "Special text before";
+            color: #f00;
+            font-size: 20px;
+            display: block;
+        }
+        #container::after {
+            content: "Special text after";
+            color: #f00;
+            font-size: 20px;
+            display: block;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div id="container">
+        Main container content goes here.
+    </div>
 </body>
-
 </html>
