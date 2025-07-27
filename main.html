@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Container with Pseudo-Elements</title>
-    <style>
-        #container {
-            margin: 20px;
-        }
-        #container::before {
-            content: "Special text before";
-            color: #f00;
-            font-size: 20px;
-            display: block;
-        }
-        #container::after {
-            content: "Special text after";
-            color: #f00;
-            font-size: 20px;
-            display: block;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Pseudo-elements Inline Example</title>
+<style>
+#container {
+    margin: 20px;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+#container::before {
+    content: "Before Element";
+    color: #f00;
+    font-size: 32px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+#container::after {
+    content: "After Element";
+    color: #f00;
+    font-size: 32px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+</style>
 </head>
 <body>
-    <div id="container">
-        Main container content goes here.
-    </div>
+<div id="container">
+    This is the main container element
+</div>
 </body>
 </html>
